@@ -1,0 +1,152 @@
+body {
+  background-color: #c6dbf4;
+}
+
+
+/* FROM FIRST PAGE */
+.logo {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-left: 15px;
+}
+.choice {
+  display: flex;
+  justify-content: center;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.icons {
+  display: flex;
+  width: 60px;
+}
+.heart {
+  display: flex;
+  width: 40px;
+}
+
+/* LOGIN */
+.smalllogo {
+  display: flex;
+}
+.smallheart {
+  height: 50px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hhelper {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.enter {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+.user_pass {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+.box {
+  width: 160px;
+  height: 15px;
+  border: 2px solid #ef9a9b;
+  border-radius: 3px;
+  background-color: white;
+  margin-left: 6px;
+}
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttonborder {
+  border: 2px solid #1e3363;
+  background-color: #1e3363;
+  border-radius: 3px;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 3px;
+  padding-bottom: 1px;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-size: 50px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #1e3363;
+}
+h2 {
+  font-family: sans-serif;
+  font-size: 25px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #1e3363;
+}
+h3 {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #ef9a9b;
+}
+a {
+  text-decoration: none;
+}
+
+/* HOME PAGE */
+.row-wrapper {
+	display:flex;
+	flex-direction: row;
+}
+
+.add-friend {
+  width: 170px;
+  height: 60px;
+  border-radius: 10px;
+  background-color:#ef9a9b;
+  margin-bottom: 20;
+  text-align: center;
+}
+
+.friends-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+  left: -100;
+}
+
+.friends-header{
+  display: flex;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #1e3363;
+}
+
+.friend{
+  width: 400px;
+  height: 80px;
+  border: 3px solid #1e3363;
+  border-radius: 10px;
+  background-color: white;
+  padding-left: 30;
+}
+
+.friend-name{
+  margin-bottom: -10;
+}
