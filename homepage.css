@@ -156,6 +156,8 @@ li{
   background-color: white;
   padding-left: 30;
   margin-bottom: 5;
+  position: relative;
+  left: -15;
 }
 
 .friend-name{
