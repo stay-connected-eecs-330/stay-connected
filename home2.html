@@ -1,4 +1,5 @@
-<!--For second user-->
+
+<!-- For second user -->
 <html>
   <header>
         <title>Stay Connected</title>
@@ -12,17 +13,51 @@
     </div>
 	<div class="friends-list">
 		<h1 class="friends-header">your friends</h1>
-		<div class="add-friend">
+		<button class="add-friend" onclick="openForm()">
 			<h2 class="add-friend-text">+ add friend</h2>
-		</div>
-		<div class="friend">
-			<h2 class="friend-name">James Chen</h2>
-			<h3>last hangout: 2/10/18</h3>
-		</div>
-		<div class="friend">
+		<!--<h2 class="add-friend-text">+ add friend</h2>	<button class="open-button" onclick="openForm()">Open Form</button> -->
+		</button>
+
+
+<div class="form-popup" id="myForm">
+  <form class="form-container">
+    <h2>add a friend!</h2>
+    <label for="friend"><h4 class="friend-name">friend:</h4></label>
+    <br>
+    <input type="text" id = "friend" placeholder="enter your friend's name" required>
+
+    <label for="date"><h4 class="friend-name">last hangout:</h4></label>
+    <br>
+    <input type="date" id ="date" placeholder="MM/DD/YY" required>
+    <!--name="date" -->
+    <br><br>
+
+    <button type = "button" class="btn" onclick= "myFunction()">submit</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">close</button>
+
+  </form>
+</div>
+
+<div class = "friendlist">
+	<ul id = 'list'>
+		<li>
 			<h2 class="friend-name">Leo Johnson</h2>
-			<h3>last hangout: 4/16/18</h3>
-		</div>
-		</div>  
-  </body>
+			<h3>last hangout: 4/20/18</h3>
+		</li>
+	
+		<li>
+			<h2 class="friend-name">James Chen</h2>
+			<h3>last hangout: 2/5/19</h3>
+		</li>
+		</ul>
+</div>
+<!--RACH -->
+
+<!--<button class="open-button" onclick="openForm()">Open Form</button> -->
+
+
+
+<script src="home1.js"></script>
+
+</body>
 </html>
