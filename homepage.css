@@ -263,3 +263,25 @@ h4{
 
 }
 
+/* GOOGLE CALENDAR */
+.gcal-rounded-border {
+	margin-top: 30px;
+	margin-right: 30px;
+	height:630;
+	width: 730;
+	border-radius:15px;
+	background-color:white;
+	float:right;
+}
+
+.check-text{
+	text-align: center;
+}
+
+.gcal {
+	float: right;
+	padding-right: 15px;
+	border: 0;
+	width: 700;
+	height: 550;
+}
