@@ -1,0 +1,251 @@
+body {
+  background-color: #c6dbf4;
+}
+
+
+/* FROM FIRST PAGE */
+.logo {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-left: 15px;
+}
+.choice {
+  display: flex;
+  justify-content: center;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.icons {
+  display: flex;
+  width: 60px;
+}
+.heart {
+  display: flex;
+  width: 40px;
+}
+
+/* LOGIN */
+.smalllogo {
+  display: flex;
+}
+.smallheart {
+  height: 50px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hhelper {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.enter {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+.user_pass {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+.box {
+  width: 160px;
+  height: 15px;
+  border: 2px solid #ef9a9b;
+  border-radius: 3px;
+  background-color: white;
+  margin-left: 6px;
+}
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttonborder {
+  border: 2px solid #1e3363;
+  background-color: #1e3363;
+  border-radius: 3px;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 3px;
+  padding-bottom: 1px;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-size: 50px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #1e3363;
+}
+h2 {
+  font-family: sans-serif;
+  font-size: 25px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #1e3363;
+}
+h3 {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #ef9a9b;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+/* HOME PAGE */
+.row-wrapper {
+	display:flex;
+	flex-direction: row;
+}
+
+/*now a button*/
+
+/*
+.add-friend {
+  width: 170px;
+  height: 60px;
+  border-radius: 10px;
+  background-color:#ef9a9b;
+  margin-bottom: 20;
+  text-align: center;
+    cursor: pointer;
+}
+*/
+
+.friends-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+  left: -100;
+}
+
+.friends-header{
+  display: flex;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #1e3363;
+}
+
+
+/** BEFORE CALLED .friend{ */
+
+li{
+  width: 400px;
+  height: 80px;
+  border: 3px solid #1e3363;
+  border-radius: 10px;
+  background-color: white;
+  padding-left: 30;
+  margin-bottom: 5;
+}
+
+.friend-name{
+  margin-bottom: -10;
+}
+
+
+/** Form components for adding a friend  **/
+
+/* BEFORE CALLED .friendlist */
+ul{
+  list-style-type: none;
+}
+
+.add-friend {
+  width: 170px;
+  height: 60px;
+  border-radius: 10px;
+  background-color:#ef9a9b;
+  margin-bottom: 20;
+  text-align: center;
+  cursor: pointer;
+}
+
+h4{
+  font-family: sans-serif;
+  font-size: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #ef9a9b;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  bottom: 100px;
+  right: 15px;
+  border: 3px solid #1e3363;
+  border-radius: 10px;
+  background-color: white;
+}
+
+/* The background of the form*/
+.form-container {
+  max-width: 300px;
+  height: 375px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px; 
+}
+
+/* The textbox for the form */
+.form-container input[type=text], .form-container input[type=date]{
+  width: 280px;
+  height: 40px;
+  border: 3px solid #1e3363;
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+  margin-bottom: 5;
+}
+
+/* Turns textbox to gray when user is inputting */
+.form-container input[type=text]:focus, .form-container input[type=date]:focus{
+  background-color: #ddd;
+}
+
+/* Set a style for the submit button */
+.form-container .btn {
+  width: 170px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #1e3363;
+  margin-bottom: 20;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  margin-bottom:20px;
+  width: 100%;
+  border: none;
+  opacity: 0.8;
+}
+
+/* the cancel button */
+.form-container .cancel {
+  background-color: #ef9a9b ;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+
+}
+
