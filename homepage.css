@@ -127,6 +127,18 @@ a {
 }
 */
 
+.logout {
+  width: 110px;
+  height: 55px;
+  float: right;
+  margin-top: 20px;
+  margin-left: 1030;
+  border-radius: 10px;
+  background-color:#ef9a9b;
+  text-align: center;
+  align-items: center;
+}
+
 .friends-list {
   display: flex;
   flex-direction: column;
@@ -156,6 +168,8 @@ li{
   background-color: white;
   padding-left: 30;
   margin-bottom: 5;
+  position: relative;
+  left: -15;
 }
 
 .friend-name{
