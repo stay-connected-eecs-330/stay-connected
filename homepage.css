@@ -285,3 +285,9 @@ h4{
 	width: 700;
 	height: 550;
 }
+
+
+
+.container{
+  float: left;
+}
