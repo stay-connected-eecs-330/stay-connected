@@ -21,7 +21,7 @@ function myFunction(){
 
 
 
-//FACEBOOK JAVASCRIPT
+/*FACEBOOK JAVASCRIPT
       window.fbAsyncInit = function() {
         FB.init({
           appId      : '934521526938622',
@@ -38,7 +38,7 @@ function myFunction(){
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
 
-
+*/
 /*
 	 var together = friend + "\n" + date;
 	 var node = document.createElement("LI");
