@@ -18,6 +18,27 @@ function myFunction(){
 	 let element = document.getElementById("list");
 	 element.innerHTML +='<li> <h2 class="friend-name">' +friend+ '</h2> <h3>last hangout: '+date+'</h3>  </li>';
 	 document.getElementById("myForm").style.display = "none";
+
+
+
+//FACEBOOK JAVASCRIPT
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '934521526938622',
+          xfbml      : true,
+          version    : 'v2.6'
+        });
+      };
+
+      (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+
+
 /*
 	 var together = friend + "\n" + date;
 	 var node = document.createElement("LI");
