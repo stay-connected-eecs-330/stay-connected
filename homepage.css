@@ -271,7 +271,7 @@ h4{
 	width: 730;
 	border-radius:15px;
 	background-color:white;
-	float:right;
+	float:left;
 }
 
 .check-text{
@@ -290,4 +290,5 @@ h4{
 
 .container{
   float: left;
+
 }
