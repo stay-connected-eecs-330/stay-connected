@@ -18,11 +18,37 @@
 				<h2>logout</h2>
 			</a>	
 		</div>  
-	</div>  
+	</div> 
+
+		  <!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v3.2'
+    });
+  };
+
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="2250285021965214"
+  theme_color="#6699cc">
+</div> 
 	  <div class="gcal-rounded-border">
 		  <h2 class="check-text">check your availability as you message your friend!</h2>
 		  <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showDate=0&amp;showPrint=0&amp;showTz=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=u.northwestern.edu_8nf98ukocn0dlpaa0lvmlhqaoo%40group.calendar.google.com&amp;color=%23ef9a9b&amp;ctz=America%2FChicago" class="gcal" frameborder="0" scrolling="no"></iframe>
 	  </div>
+
 	  <script src="home1.js"></script>
 
 </body>
