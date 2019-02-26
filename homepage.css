@@ -266,9 +266,9 @@ h4{
 /* GOOGLE CALENDAR */
 .gcal-rounded-border {
 	margin-top: -20;
-	margin-left: 200px;
+	margin-left: 210px;
 	height: 580;
-	width: 790;
+	width: 810;
 	border-radius:15px;
 	background-color:white;
 	float:left;
@@ -282,7 +282,7 @@ h4{
 	float: left;
 	padding-left: 15px;
 	border: 0;
-	width: 760;
+	width: 780;
 	height: 490;
 }
 
