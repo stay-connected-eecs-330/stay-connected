@@ -289,6 +289,8 @@ h4{
 
 .container{
   float: left;
+  position: relative;
+  left: 200;
 }
 
 /* FRIEND OVERVIEW PAGE*/
