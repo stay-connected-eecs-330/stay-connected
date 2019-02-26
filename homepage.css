@@ -131,8 +131,8 @@ a {
 .logout {
   width: 110px;
   height: 55px;
-  margin-top: 20px;
-  margin-right: 20px;
+  margin-top: 15px;
+  margin-right: 15px;
   border-radius: 10px;
   background-color:#ef9a9b;
   text-align: center;
@@ -265,7 +265,7 @@ h4{
 
 /* GOOGLE CALENDAR */
 .gcal-rounded-border {
-	margin-left: 90px;
+	margin-left: 135px;
 	height: 580;
 	width: 730;
 	border-radius:15px;
