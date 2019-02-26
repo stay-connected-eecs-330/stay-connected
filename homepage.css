@@ -265,9 +265,10 @@ h4{
 
 /* GOOGLE CALENDAR */
 .gcal-rounded-border {
-	margin-left: 135px;
+	margin-top: -20;
+	margin-left: 200px;
 	height: 580;
-	width: 770;
+	width: 790;
 	border-radius:15px;
 	background-color:white;
 	float:left;
@@ -281,7 +282,7 @@ h4{
 	float: left;
 	padding-left: 15px;
 	border: 0;
-	width: 740;
+	width: 760;
 	height: 490;
 }
 
@@ -312,7 +313,7 @@ h4{
 .button-blue {
   width: 200px;
   height: 40px;
-  margin-right: 30px;
+  margin-right: 20px;
   border-radius: 10px;
   background-color:#1e3363;
   text-align: center;
@@ -323,7 +324,7 @@ h4{
 .button-pink {
   width: 200px;
   height: 40px;
-  margin-right: 30px;
+  margin-right: 20px;
   border-radius: 10px;
   background-color:#ef9a9b;
   text-align: center;
