@@ -1,0 +1,124 @@
+<!-- For first user -->
+<html>
+  <header>
+        <title>Stay Connected</title>
+        <link rel="stylesheet" type="text/css" href="homepage.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+	  	<script type="homepage.js"></script>
+  </header>
+  <body>
+	<div class="row-wrapper">
+		<div class="smalllogo">
+			<a href="home1.html">
+				<img class="smallheart" src="images/stayconnected_heart-01.png">
+			</a>
+		</div>
+		<div class="friend-header">
+			<h1>Mark Johnson</h1>
+		</div>
+		<div class="logout">
+			<a href="index.html">
+				<h2>logout</h2>
+			</a>
+		</div>
+	</div>
+
+	<div class="row-wrapper-buttons">
+    <div class="button-pink">
+			<a href="mark_overview.html">
+				<p class="blue-font">overview</p>
+			</a>
+		</div>
+		<div class="button-blue">
+			<a href="mark_message.html">
+				<p class="pink-font">send message</p>
+			</a>
+		</div>
+		<div class="button-pink">
+			<a href="mark_pasthangouts.html">
+				<p class="blue-font">past hangouts</p>
+			</a>
+		</div>
+		<div class="button-pink">
+			<a href="mark_addhangout.html">
+				<p class="blue-font">add hangout</p>
+			</a>
+		</div>
+	</div>
+
+<!--		   Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v3.2'
+    });
+  };
+
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id = "container">
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="2250285021965214"
+  theme_color="#ef9a9b"
+  greeting_dialogue_display = show
+  logged_in_greeting="Hey when are you free to hang out?"
+  logged_out_greeting="Hey when are you free to hang out?"
+  >
+</div>
+</div>
+
+
+<!--
+
+ THE FACEBOOK WE ARE USING
+<script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '934521526938622',
+          xfbml      : true,
+          version    : 'v2.6'
+        });
+      };
+
+      (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+    <div class="fb-page"
+         data-href="https://www.facebook.com/2250285021965214/"
+         data-tabs="messages"
+         data-width="400"
+         data-height="300"
+         data-small-header="true">
+      <div class="fb-xfbml-parse-ignore">
+        <blockquote></blockquote>
+      </div>
+    </div>
+
+-->
+
+	  <div class="gcal-rounded-border">
+		  <h2 class="check-text">check your availability as you message your friend!</h2>
+		  <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showDate=0&amp;showPrint=0&amp;showTz=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=u.northwestern.edu_8nf98ukocn0dlpaa0lvmlhqaoo%40group.calendar.google.com&amp;color=%23ef9a9b&amp;ctz=America%2FChicago" class="gcal" frameborder="0" scrolling="no"></iframe>
+	  </div>
+
+	  <script src="home1.js"></script>
+
+</body>
+</html>
