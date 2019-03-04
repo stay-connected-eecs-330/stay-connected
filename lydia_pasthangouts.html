@@ -1,12 +1,13 @@
 <!-- For first user -->
-<html>
+<html style = "overflow: hidden">
   <header>
         <title>Stay Connected</title>
         <link rel="stylesheet" type="text/css" href="homepage.css"/>
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-	  	<script type="homepage.js"></script>
+	  	<script src="pasthangout.js"></script>
   </header>
   <body>
+  	<div class = "wrap">
 	<div class="row-wrapper">  
 		<div class="smalllogo">
 			<a href="home1.html">
@@ -44,34 +45,90 @@
 <!-- If the bubble says "5 - getting coffee", then maybe the popup could include
 a header like "You've gotten coffee with Lydia 5 times! to clarify"-->
 	  
-	<div class="pasthangout-description"><p class="blue-font">click on a bubble to learn more about your past hangouts with lydia!</p></div>  
-	  
-	<div class="row-wrapper-buttons">
-		<div class="circle-stat" id="circle-coffee">
-			<p class="pink-font" id="coffee-pinkfont">1</p>
-			<p class="blue-font" id="coffee-bluefont">coffee</p>
-		</div>
-	 	<div class="circle-stat" id="circle-studying">
-			<p class="pink-font" id="studying-pinkfont">3</p>
-			<p class="blue-font" id="studying-bluefont">studying</p>
-		</div>
-	</div>  
-	  
-	<div class="row-wrapper-buttons">
-		<div class="circle-stat" id="circle-food">
-			<p class="pink-font" id="food-pinkfont">5</p>
-			<p class="blue-font" id="food-bluefont">getting food</p>
-		</div>
-		<div class="circle-stat" id="circle-movies">
-			<p class="pink-font" id="movies-pinkfont">2</p>
-			<p class="blue-font" id="movies-bluefont">movies</p>
-		</div>
-		<div class="circle-stat" id="circle-other">
-			<p class="pink-font" id="other-pinkfont">10</p>
-			<p class="blue-font" id="other-bluefont">other hangouts</p>
-		</div>
-	</div>  
-	  
+	<div class="pasthangout-description"><p class="blue-font">Click on each bubble to learn more about your past hangouts with Lydia!</p></div>  
+
+	<div id="coffee_container">
+   		<div class="coffee" >
+        	<div class="front face" >
+        		<p class="pink-font" id="coffee-pinkfont">1</p>
+				<p class="blue-font" id="coffee-bluefont">coffee</p>
+        	</div>
+        	<div class="back face center">
+           		<p class="pink-font" id="coffee-title">You have gotten coffee with Lydia 1 time!</p>
+           		<p class="blue-font" id="coffee-backfont">12/12/18, 2pm: Colectivo</p>
+        	</div>
+    	</div>
+	</div>
+
+	<div id="studying_container">
+   		<div class="study">
+        	<div class="front face" >
+        		<p class="pink-font" id="studying-pinkfont">3</p>
+				<p class="blue-font" id="studying-bluefont">studying</p>
+        	</div>
+        	<div class="back face center" ">
+           		<p class="pink-font" id="studying-title">You have studied <br>with Lydia 3 times!</p>
+           		<p class="blue-font" id="studying-backfont"> 12/3/18, 11pm: Main</p>
+           		<p class="blue-font" id="studying-backfont"> 1/5/19, 9am: Sherbucks</p>
+           		<p class="blue-font" id="studying-backfont"> 1/8/19, 10am: Norris</p>
+        	</div>
+    	</div>
+	</div>
+
+	<div id="other_container">
+   		<div class="other" >
+        	<div class="front face" >
+        		<p class="pink-font" id="other-pinkfont">10</p>
+				<p class="blue-font" id="other-bluefont">other hangouts</p>
+        	</div>
+        	<div class="back face center" ">
+           		<p class="pink-font" id="other-title">You have done 10 other <br>activies with Lydia!</p>
+           		<p class="blue-font" id="other-backfont">9/25/18, 8pm: Housewarming party</p>
+           		<p class="blue-font" id="other-backfont">10/3/18, 10pm: Wine night</p>
+           		<p class="blue-font" id="other-backfont">10/7/18, 2pm: Beach</p>
+           		<p class="blue-font" id="other-backfont">10/17/18, 8pm: Grocery shopping at Trader Joe's</p>
+           		<p class="blue-font" id="other-backfont">10/25/18, 1pm: Painting at the Lakefill</p>
+           		<p class="blue-font" id="other-backfont">10/31/18, 11pm: Halloweekend</p>
+           		<p class="blue-font" id="other-backfont">11/15/18, 6pm: Attended Lydia's concert</p>
+           		<p class="blue-font" id="other-backfont">11/22/18, 5pm: Thanksgiving with Lydia's family</p>
+           		<p class="blue-font" id="other-backfont">11/23/18, 10am: Black Friday Shopping</p>
+           		<p class="blue-font" id="other-backfont">12/10/18, 8pm: Christkindlmarket</p>
+        	</div>
+    	</div>
+	</div>
+
+	<div id="food_container">
+   		<div class="food" >
+        	<div class="front face" >
+        		<p class="pink-font" id="food-pinkfont">5</p>
+				<p class="blue-font" id="food-bluefont">getting food</p>
+        	</div>
+        	<div class="back face center" ">
+           		<p class="pink-font" id="food-title">You have gotten food <br>with Lydia 5 times!</p>
+           		<p class="blue-font" id="food-backfont">1/3/19, 6pm: 527 Cafe</p>
+           		<p class="blue-font" id="food-backfont"> 1/19/19, 3pm: Koco Table</p>
+           		<p class="blue-font" id="food-backfont"> 2/1/19, 11pm: Burger King</p>
+           		<p class="blue-font" id="food-backfont">2/14/19, 7pm: Andy's</p>
+           		<p class="blue-font" id="food-backfont">1/3/19, 9pm: Kung-Fu Tea</p>
+        	</div>
+    	</div>
+	</div>
+	
+	<div id="movie_container">
+   		<div class="movie" >
+       		<div class="front face" >
+        		<p class="pink-font" id="movies-pinkfont">2</p>
+				<p class="blue-font" id="movies-bluefont">movies</p>
+        	</div>
+        	<div class="back face center" ">
+           		<p class="pink-font" id="movies-title">You have gone to the movies with Lydia 2 times!</p>
+           		<p class="blue-font" id="movies-backfont">2/18/19 8pm: Spiderverse</p>
+           		<p class="blue-font" id="movies-backfont">3/7/19 6pm: Captain Marvel</p>
+        	</div>
+    	</div>
+	</div>
+</div>
 </body>
 </html>
+
 
