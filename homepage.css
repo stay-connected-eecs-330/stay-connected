@@ -309,6 +309,17 @@ h4{
 	flex-direction: row;
 }
 
+.circle{
+  position: relative;
+  top: -40;
+  bottom: -40;
+  right: 200;
+  justify-content: center;
+  flex-direction: row;
+  display:flex;
+}
+
+
 /* use with pink font*/
 .button-blue {
   width: 200px;
@@ -356,119 +367,242 @@ h4{
 	top: -30;
 }
 
-.circle-stat {
-	background-color: white;
-	border-radius: 50%;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	border-color: #1e3363;
-	border-width: 3;
-
-}
-
-.circle-stat:hover {
-	border-style: solid;
-}
-
-#circle-coffee {
-	background-color: white;
-	border-radius: 50%;
-	width: 100;
-	height: 100;
-	margin-top: 40;
-	margin-right: 70;
-}
-
-#circle-studying {
-	background-color: white;
-	border-radius: 50%;
-	width: 160;
-	height: 160;
-}
-
-#circle-food {
-	background-color: white;
-	border-radius: 50%;
-	width: 200;
-	height: 200;
-	margin-top: 15;
-	margin-right: 70;
-}
-
-#circle-movies {
-	background-color: white;
-	border-radius: 50%;
-	width: 140;
-	height: 140;
-	margin-top: 30;
-	margin-right: 90;
-}
-
-#circle-other {
-	background-color: white;
-	border-radius: 50%;
-	width: 300;
-	height: 300;
+#coffee_container{
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+    width: 150;
+    height: 150;
+    margin-left: 350;
+    top: -20;
+    text-align: center;
+    align-content: center;
 }
 
 #coffee-pinkfont{
-	font-size: 50;
+	font-size: 90;
 	position: relative;
-	top: 7;
+	top: 5;
+  margin-bottom: -15;
 }
 
 #coffee-bluefont{
-	font-size: 20;
+	font-size: 22;
 	position: relative;
-	top: -55;
+  margin-bottom: -5;
 }
 
-#studying-pinkfont{
-	font-size: 90;
-	position: relative;
-	top: 20;
+#coffee-title{
+  margin-top: 20;
+  font-size: 15;
+  margin-top: 30;
+  margin-bottom: 5;
+  position: relative;
+  align-self: center;
 }
 
-#studying-bluefont{
-	font-size: 20;
-	position: relative;
-	top: -90;
+#coffee-backfont{
+  font-size: 12;
+  position: relative;
+  margin-bottom: 40;
 }
 
-#food-pinkfont{
-	font-size: 100;
-	position: relative;
-	top: 40;
-}
 
-#food-bluefont{
-	font-size: 20;
-	position: relative;
-	top: -80;
-	
+#movie_container {
+    border-radius: 50%;
+    width: 200;
+    height: 200;
+    margin-left: 700;
+    position: relative;
+    bottom: 1200;
+    z-index: 1;
+    text-align: center;
 }
 
 #movies-pinkfont{
-	font-size: 75;
-	position: relative;
-	top: 15;
+  font-size: 130;
+  position: relative;
+  top: 10;
+  margin-bottom: 0 ;
 }
 
 #movies-bluefont{
-	font-size: 20;
+  font-size: 27;
+  position: relative;
+  margin-top: -8;
+  margin-bottom: -2;
+}
+
+#movies-title{
+  margin-top: 50;
+  font-size: 18;
+  margin-bottom: 3;
+  position: relative;
+  margin-left: 5.5;
+}
+
+#movies-backfont{
+  font-size: 13;
+  position: relative;
+  line-height: 45%;
+}
+
+
+#studying_container{
+    position: relative;
+    margin: 10px auto;
+    z-index: 1;
+    border-radius: 50%;
+    width: 250;
+    height: 250;
+    margin-right: 700;
+    text-align: center;
+}
+
+#studying-pinkfont{
+	font-size: 150;
 	position: relative;
-	top: -75;
+	top: 30;
+}
+
+#studying-bluefont{
+	font-size: 30;
+	top: -150;
+  position: relative;
+  margin-bottom: -150;
+}
+
+#studying-title{
+  margin-top: 50;
+  font-size: 22;
+  position: relative;
+  margin-bottom: 10;
+}
+
+#studying-backfont{
+  font-size: 15;
+  position: left;
+  line-height: 75%;
+}
+
+
+#food_container {
+    position: relative;
+    margin: 10px auto;
+    z-index: 1;
+    border-radius: 50%;
+    width: 320;
+    height: 320;
+    bottom: 700;
+    margin-left: 100;  
+}
+#food-pinkfont{
+	font-size: 200;
+	position: relative;
+	top: 40;
+}
+#food-bluefont{
+	font-size: 35;
+	position: relative;
+	top: -200;
+  margin-bottom: -190;
+}
+#food-title{
+  margin-top: 50;
+  font-size: 22;
+  margin-bottom: 10;
+  margin-left: 5;
+  position: relative;
+}
+
+#food-backfont{
+  font-size: 16;
+  position: relative;
+   line-height: 50%;
+}
+
+#other_container{
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+    width: 450;
+    height: 450;
+    margin-left: 900;
+    bottom: 400;
+    text-align: center;
 }
 
 #other-pinkfont{
-	font-size: 130;
+	font-size: 250;
 	position: relative;
 	top: 70;
 }
 
+
 #other-bluefont{
-	font-size: 20;
+	font-size: 42;
 	position: relative;
-	top: -80;
+  top: -220;
+  margin-bottom: -200;
+}
+
+#other-title{
+  margin-top: 60;
+  font-size: 27;
+  margin-bottom: 10;
+  position: relative;
+  margin-left: 5.5;
+}
+
+#other-backfont{
+  font-size: 15;
+  position: relative;
+  line-height: 40%;
+}
+
+
+.coffee, .study, .other, .food, .movie{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 1s;
+}
+
+.flip {
+    transform: rotateX(180deg);
+}
+
+.face {
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: transparent;
+  backface-visibility: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.face:hover{
+  border: 3px solid #1e3363;
+}
+
+.face.back {
+  transform: rotateX(180deg);
+  shape-outside: circle(70%);
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.wrap{
+ margin: 0; height: 100%; overflow: hidden;
+
 }
