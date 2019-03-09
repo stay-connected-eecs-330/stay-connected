@@ -290,6 +290,7 @@ h4{
 
 .container{
   position: fixed;
+  left: -100;
 }
 
 /* FRIEND OVERVIEW PAGE*/
