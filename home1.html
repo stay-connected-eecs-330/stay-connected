@@ -1,0 +1,79 @@
+<!-- For first user -->
+<html>
+  <header>
+        <title>Stay Connected</title>
+        <link rel="stylesheet" type="text/css" href="homepage.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+	  	<script type="homepage.js"></script>
+  </header>
+  <body>
+	<div class="row-wrapper">
+		<div class="smalllogo">
+			<a href="index.html">
+				<img class="smallheart" src="images/stayconnected_heart-01.png">
+			</a>
+		</div>
+		<div class="logout">
+			<a href="index.html">
+				<h2>logout</h2>
+			</a>
+		</div>
+	</div>
+	<div class="friends-list">
+		<h1 class="friends-header">your friends</h1>
+		<button class="add-friend" onclick="openForm()">
+			<h2 class="add-friend-text">+ add friend</h2>
+		<!--<h2 class="add-friend-text">+ add friend</h2>	<button class="open-button" onclick="openForm()">Open Form</button> -->
+		</button>
+
+
+<div class="form-popup" id="myForm">
+  <form class="form-container">
+    <h2>add a friend!</h2>
+    <label for="friend"><h4 class="friend-name">friend:</h4></label>
+    <br>
+    <input type="text" id = "friend" placeholder="enter your friend's full name" required>
+
+    <label for="date"><h4 class="friend-name">most recent hangout:</h4></label>
+    <br>
+    <input type="date" id ="date" placeholder="MM/DD/YY" required>
+    <!--name="date" -->
+    <br><br>
+
+    <button type = "button" class="btn" onclick= "myFunction()">submit</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">close</button>
+
+  </form>
+</div>
+
+<div class = "friendlist">
+	<ul id = 'list'>
+		<li>
+			<a href="lydia_overview.html">
+			<h2 class="friend-name">Lydia Allen</h2>
+			<h3>last hangout: 9/20/18</h3>
+			</a>
+		</li>
+
+		<li>
+      <a href="mark_overview.html">
+			<h2 class="friend-name">Mark Johnson</h2>
+			<h3>last hangout: 1/4/19</h3>
+    </a>
+		</li>
+		<li>
+			<h2 class="friend-name">John Smith</h2>
+			<h3>last hangout: 2/4/19</h3>
+		</li>
+		</ul>
+</div>
+<!--RACH -->
+
+<!--<button class="open-button" onclick="openForm()">Open Form</button> -->
+
+
+
+<script src="home1.js"></script>
+
+</body>
+</html>

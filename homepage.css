@@ -1,0 +1,677 @@
+body {
+  background-color: #c6dbf4;
+}
+
+
+/* FROM FIRST PAGE */
+.logo {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-left: 15px;
+}
+.choice {
+  display: flex;
+  justify-content: center;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.icons {
+  display: flex;
+  width: 60px;
+}
+.heart {
+  display: flex;
+  width: 40px;
+}
+
+/* LOGIN */
+.smalllogo {
+  display: flex;
+}
+.smallheart {
+  height: 50px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hhelper {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.enter {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+.user_pass {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+.box {
+  width: 160px;
+  height: 15px;
+  border: 2px solid #ef9a9b;
+  border-radius: 3px;
+  background-color: white;
+  margin-left: 6px;
+}
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttonborder {
+  border: 2px solid #1e3363;
+  background-color: #1e3363;
+  border-radius: 3px;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 3px;
+  padding-bottom: 1px;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-size: 70px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #1e3363;
+}
+h2 {
+  font-family: sans-serif;
+  font-size: 25px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #1e3363;
+}
+h3 {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #ef9a9b;
+}
+h4{
+  font-family: sans-serif;
+  font-size: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #ef9a9b;
+}
+h5 {
+  font-family: sans-serif;
+  font-size: 110px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #ef9a9b;
+  margin: 0;
+  margin-top: 65px;
+}
+h6 {
+  font-family: sans-serif;
+  font-size: 25px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #1e3363;
+  margin: 5px;
+
+}
+
+
+a {
+  text-decoration: none;
+}
+
+/* HOME PAGE */
+.row-wrapper {
+	display:flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+/*now a button*/
+
+/*
+.add-friend {
+  width: 170px;
+  height: 60px;
+  border-radius: 10px;
+  background-color:#ef9a9b;
+  margin-bottom: 20;
+  text-align: center;
+    cursor: pointer;
+}
+*/
+
+.logout {
+  width: 110px;
+  height: 55px;
+  margin-top: 15px;
+  margin-right: 15px;
+  border-radius: 10px;
+  background-color:#ef9a9b;
+  text-align: center;
+  align-items: center;
+}
+
+.friends-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+  left: -100;
+}
+
+.friends-header{
+  display: flex;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #1e3363;
+}
+
+
+/** BEFORE CALLED .friend{ */
+
+li{
+  width: 400px;
+  height: 80px;
+  border: 3px solid #1e3363;
+  border-radius: 10px;
+  background-color: white;
+  padding-left: 30;
+  margin-bottom: 5;
+  position: relative;
+  left: -15;
+}
+
+.li2 {
+  width: 400px;
+  height: 130px;
+  border: 3px solid #1e3363;
+  border-radius: 10px;
+  background-color: white;
+  padding-left: 30;
+  margin-bottom: 5;
+  position: relative;
+  left: -15;
+}
+
+.friend-name{
+  margin-bottom: -10;
+}
+
+.activity-name{
+  margin-bottom: -10;
+}
+/** Form components for adding a friend  **/
+
+/* BEFORE CALLED .friendlist */
+ul{
+  list-style-type: none;
+}
+
+.add-friend {
+  width: 170px;
+  height: 60px;
+  border-radius: 10px;
+  background-color:#ef9a9b;
+  margin-bottom: 20;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  bottom: 100px;
+  right: 15px;
+  border: 3px solid #1e3363;
+  border-radius: 10px;
+  background-color: white;
+}
+
+/* The background of the form*/
+.form-container {
+  max-width: 300px;
+  height: 375px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* The textbox for the form */
+.form-container input[type=text], .form-container input[type=date]{
+  width: 280px;
+  height: 40px;
+  border: 3px solid #1e3363;
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+  margin-bottom: 5;
+}
+
+/* Turns textbox to gray when user is inputting */
+.form-container input[type=text]:focus, .form-container input[type=date]:focus{
+  background-color: #ddd;
+}
+
+/* Set a style for the submit button */
+.form-container .btn {
+  width: 170px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #1e3363;
+  margin-bottom: 20;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  margin-bottom:20px;
+  width: 100%;
+  border: none;
+  opacity: 0.8;
+}
+
+/* the cancel button */
+.form-container .cancel {
+  background-color: #ef9a9b ;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+
+}
+
+/* GOOGLE CALENDAR */
+.gcal-rounded-border {
+	margin-top: -20;
+	margin-left: 20px;
+	height: 580;
+	width: 1000;
+	border-radius:15px;
+	background-color:white;
+	float:left;
+}
+
+.check-text{
+	text-align: center;
+}
+
+.gcal {
+	float: left;
+	padding-left: 30px;
+	border: 0;
+	width: 940;
+	height: 490;
+}
+
+
+
+.container{
+  float: left;
+  position: relative;
+  left: 200;
+}
+
+/* FRIEND OVERVIEW PAGE*/
+.friend-header{
+	text-align: center;
+	display: flex;
+}
+
+.row-wrapper-buttons {
+	position: relative;
+	top: -40;
+	bottom: -40;
+	display:flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.circle{
+  position: relative;
+  top: -40;
+  bottom: -40;
+  right: 200;
+  justify-content: center;
+  flex-direction: row;
+  display:flex;
+}
+
+
+/* use with pink font*/
+.button-blue {
+  width: 200px;
+  height: 40px;
+  margin-right: 20px;
+  border-radius: 10px;
+  background-color:#1e3363;
+  text-align: center;
+  align-items: center;
+}
+
+/* use with blue font*/
+.button-pink {
+  width: 200px;
+  height: 40px;
+  margin-right: 20px;
+  border-radius: 10px;
+  background-color:#ef9a9b;
+  text-align: center;
+  align-items: center;
+}
+
+/* don't change margin - used in friends buttons */
+.pink-font {
+  font-family: sans-serif;
+  font-size: 25px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #ef9a9b;
+  margin-top: 8;
+}
+
+/* don't change margin - used in friends buttons */
+.blue-font {
+  font-family: sans-serif;
+  font-size: 25px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #1e3363;
+  margin-top: 8;
+}
+
+.overview {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.days-since {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background-color: white;
+  border-color: #1e3363;
+}
+
+.circle-text {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.pasthangout-description {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	top: -30;
+}
+
+#coffee_container{
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+    width: 150;
+    height: 150;
+    margin-left: 350;
+    top: -20;
+    text-align: center;
+    align-content: center;
+}
+
+#coffee-pinkfont{
+	font-size: 90;
+	position: relative;
+	top: 5;
+  margin-bottom: -15;
+}
+
+#coffee-bluefont{
+	font-size: 22;
+	position: relative;
+  margin-bottom: -5;
+}
+
+#coffee-title{
+  margin-top: 20;
+  font-size: 15;
+  margin-top: 30;
+  margin-bottom: 5;
+  position: relative;
+  align-self: center;
+}
+
+#coffee-backfont{
+  font-size: 12;
+  position: relative;
+  margin-bottom: 40;
+}
+
+
+#movie_container {
+    border-radius: 50%;
+    width: 200;
+    height: 200;
+    margin-left: 700;
+    position: relative;
+    bottom: 1200;
+    z-index: 1;
+    text-align: center;
+}
+
+#movies-pinkfont{
+  font-size: 130;
+  position: relative;
+  top: 10;
+  margin-bottom: 0 ;
+}
+
+#movies-bluefont{
+  font-size: 27;
+  position: relative;
+  margin-top: -8;
+  margin-bottom: -2;
+}
+
+#movies-title{
+  margin-top: 50;
+  font-size: 18;
+  margin-bottom: 3;
+  position: relative;
+  margin-left: 5.5;
+}
+
+#movies-backfont{
+  font-size: 13;
+  position: relative;
+  line-height: 45%;
+}
+
+
+#studying_container{
+    position: relative;
+    margin: 10px auto;
+    z-index: 1;
+    border-radius: 50%;
+    width: 250;
+    height: 250;
+    margin-right: 700;
+    text-align: center;
+}
+
+#studying-pinkfont{
+	font-size: 150;
+	position: relative;
+	top: 30;
+}
+
+#studying-bluefont{
+	font-size: 30;
+	top: -150;
+  position: relative;
+  margin-bottom: -150;
+}
+
+#studying-title{
+  margin-top: 50;
+  font-size: 22;
+  position: relative;
+  margin-bottom: 10;
+}
+
+#studying-backfont{
+  font-size: 15;
+  position: left;
+  line-height: 75%;
+}
+
+
+#food_container {
+    position: relative;
+    margin: 10px auto;
+    z-index: 1;
+    border-radius: 50%;
+    width: 320;
+    height: 320;
+    bottom: 700;
+    margin-left: 100;
+}
+#food-pinkfont{
+	font-size: 200;
+	position: relative;
+	top: 40;
+}
+#food-bluefont{
+	font-size: 35;
+	position: relative;
+	top: -200;
+  margin-bottom: -190;
+}
+#food-title{
+  margin-top: 50;
+  font-size: 22;
+  margin-bottom: 10;
+  margin-left: 5;
+  position: relative;
+}
+
+#food-backfont{
+  font-size: 16;
+  position: relative;
+   line-height: 50%;
+}
+
+#other_container{
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+    width: 450;
+    height: 450;
+    margin-left: 900;
+    bottom: 400;
+    text-align: center;
+}
+
+#other-pinkfont{
+	font-size: 250;
+	position: relative;
+	top: 70;
+}
+
+
+#other-bluefont{
+	font-size: 42;
+	position: relative;
+  top: -220;
+  margin-bottom: -200;
+}
+
+#other-title{
+  margin-top: 60;
+  font-size: 27;
+  margin-bottom: 10;
+  position: relative;
+  margin-left: 5.5;
+}
+
+#other-backfont{
+  font-size: 15;
+  position: relative;
+  line-height: 40%;
+}
+
+
+.coffee, .study, .other, .food, .movie{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 1s;
+}
+
+.flip {
+    transform: rotateX(180deg);
+}
+
+.face {
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: transparent;
+  backface-visibility: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.face:hover{
+  border: 3px solid #1e3363;
+}
+
+.face.back {
+  transform: rotateX(180deg);
+  shape-outside: circle(70%);
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.wrap{
+ margin: 0; height: 100%; overflow: hidden;
+
+}
+
+.add-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+
+}
+
+.add-hangout {
+  width: 200px;
+  height: 60px;
+  border-radius: 10px;
+  background-color:#ef9a9b;
+  margin-bottom: 20;
+  text-align: center;
+  cursor: pointer;
+}

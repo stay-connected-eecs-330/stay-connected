@@ -1,0 +1,124 @@
+body {
+  background-color: #c6dbf4;
+}
+
+
+/* FIRST PAGE */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.choice {
+  display: flex;
+  justify-content: center;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.icons {
+  display: flex;
+  width: 120px;
+}
+.heart {
+  display: flex;
+  width: 160px;
+}
+
+/* LOGIN */
+.smalllogo {
+  display: flex;
+}
+.smallheart {
+  height: 100px;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hhelper {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.enter {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+.user_pass {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+.box {
+  width: 320px;
+  height: 35px;
+  border: 4px solid #ef9a9b;
+  border-radius: 6px;
+  background-color: white;
+  padding-left: 5px;
+  margin-left: 12px;
+}
+.user_pass_confirm {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  position: relative;
+  left: -55;
+}
+.email {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  position: relative;
+  left: 25;
+}
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttonborder {
+  border: 4px solid #1e3363;
+  background-color: #1e3363;
+  border-radius: 6px;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 6px;
+  padding-bottom: 2px;
+}
+
+
+h1 {
+  font-family: sans-serif;
+  font-size: 70px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #1e3363;
+}
+h2 {
+  font-family: sans-serif;
+  font-size: 30px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #1e3363;
+}
+h3 {
+  font-family: sans-serif;
+  font-size: 30px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #ef9a9b;
+}
+a {
+  text-decoration: none;
+}
