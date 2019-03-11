@@ -7,11 +7,11 @@
 	  	<script type="homepage.js"></script>
   </header>
   <body>
-	<div class="row-wrapper">  
+	<div class="row-wrapper">
 		<div class="smalllogo">
 			<a href="home1.html">
 				<img class="smallheart" src="images/stayconnected_heart-01.png">
-			</a>	
+			</a>
 		</div>
 		<div class="friend-header">
 			<h1>Lydia Allen</h1>
@@ -19,27 +19,71 @@
 		<div class="logout">
 			<a href="index.html">
 				<h2>logout</h2>
-			</a>	
-		</div>  
-	</div> 
-	  
-	<div class="row-wrapper-buttons">  
+			</a>
+		</div>
+	</div>
+
+	<div class="row-wrapper-buttons">
 		<div class="button-pink">
 			<a href="lydia_message.html">
 				<p class="blue-font">send message</p>
-			</a>	
-		</div>  
+			</a>
+		</div>
 		<div class="button-pink">
 			<a href="lydia_pasthangouts.html">
 				<p class="blue-font">past hangouts</p>
-			</a>	
-		</div>  
+			</a>
+		</div>
 		<div class="button-blue">
 			<a href="lydia_addhangout.html">
 				<p class="pink-font">add hangout</p>
-			</a>	
-		</div>  
-	</div>  
+			</a>
+		</div>
+	</div>
+
+
+<div class="add-wrapper">
+    <p class="blue-font"> Click here to add a future hangout</p>
+    <button class="add-hangout" onclick="openForm()">
+      <h2 class="add-hangout-text">+ add hangout</h2>
+    <!--<h2 class="add-friend-text">+ add friend</h2>	<button class="open-button" onclick="openForm()">Open Form</button> -->
+    </button>
+
+
+<div class="form-popup" id="myForm">
+  <form class="form-container" id="hangout-form">
+    <h2>add a hangout</h2>
+    <label for="friend"><h4 class="friend-name">Type of Activity:</h4></label>
+    <br>
+    <select id="type">
+      <option value="default">-- select option --</option>
+      <option value="coffee">Coffee</option>
+      <option value="getting-food">Getting Food</option>
+      <option value="movie">Movie</option>
+      <option value="studying">Studying</option>
+      <option value="other">Other</option>
+    </select>
+    <label for="friend"><h4 class="friend-name">Activity Name:</h4></label>
+    <br>
+    <input type="text" id = "friend" placeholder="enter name of activity" required>
+
+    <label for="date"><h4 class="friend-name">Date:</h4></label>
+    <br>
+    <input type="date" id ="date" placeholder="MM/DD/YY" required>
+    <!--name="date" -->
+    <label for="date"><h4 class="friend-name">Time:</h4></label>
+    <br>
+    <input type="time" id ="date" placeholder="MM/DD/YY" required>
+    <br><br>
+
+    <button type = "button" class="btn" onclick= "myFunction2()">submit</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">close</button>
+
+  </form>
+</div>
+
+</div>
+
+<script src="home1.js"></script>
 </body>
 </html>
-

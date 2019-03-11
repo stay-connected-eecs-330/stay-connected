@@ -217,11 +217,15 @@ h4{
   height: 375px;
   background-color: white;
   border-radius: 10px;
-  padding: 10px; 
+  padding: 10px;
+}
+
+#hangout-form {
+  height: 575px;
 }
 
 /* The textbox for the form */
-.form-container input[type=text], .form-container input[type=date]{
+.form-container input[type=text], .form-container input[type=date], .form-container input[type=time], .form-container select{
   width: 280px;
   height: 40px;
   border: 3px solid #1e3363;
@@ -232,7 +236,7 @@ h4{
 }
 
 /* Turns textbox to gray when user is inputting */
-.form-container input[type=text]:focus, .form-container input[type=date]:focus{
+.form-container input[type=text]:focus, .form-container input[type=date]:focus, .form-container input[type=time]:focus{
   background-color: #ddd;
 }
 
@@ -494,7 +498,7 @@ h4{
     width: 320;
     height: 320;
     bottom: 700;
-    margin-left: 100;  
+    margin-left: 100;
 }
 #food-pinkfont{
 	font-size: 200;
@@ -605,4 +609,23 @@ h4{
 .wrap{
  margin: 0; height: 100%; overflow: hidden;
 
+}
+
+.add-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+
+}
+
+.add-hangout {
+  width: 200px;
+  height: 60px;
+  border-radius: 10px;
+  background-color:#ef9a9b;
+  margin-bottom: 20;
+  text-align: center;
+  cursor: pointer;
 }
