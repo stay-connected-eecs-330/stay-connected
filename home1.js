@@ -49,15 +49,18 @@ function myFunction(){
 	 */
 }
 
-function myFunction2(){
+function myFunctionHangout(){
 	document.getElementById("myForm").style.display = "block";
-	 var friend = document.getElementById("friend").value;
-	 var date = document.getElementById("date").value;
-	 if(friend=="" || date==""){
+	 var friend = document.getElementById("hangout-friend").value;
+	 var date = document.getElementById("hangout-date").value;
+   var time = document.getElementById("hangout-time").value;
+   var type = document.getElementById("hangout-type").value;
+	 if(friend=="" || date==""|| time=="" || type == "default"){
 	 	alert("Please fill all parts of the form");
 	 	return;
 	 }
 	 let element = document.getElementById("list");
-	 element.innerHTML +='<li> <h2 class="friend-name">' +friend+ '</h2> <h3>last hangout: '+date+'</h3>  </li>';
+	 element.innerHTML +='<li> <h2 class="friend-name">' + type + ': ' + friend + '</h2> <h3>' + date + ' at ' + time + '</h3>  </li>';
 	 document.getElementById("myForm").style.display = "none";
+   document.getElementById("hangout-list").style.display = "block";
  }
