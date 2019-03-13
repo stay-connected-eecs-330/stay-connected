@@ -145,7 +145,6 @@ a {
   justify-content: center;
   align-items: center;
   position:relative;
-  left: -100;
 }
 
 .friends-header{
@@ -222,6 +221,11 @@ h4{
 
 #hangout-form {
   height: 575px;
+}
+
+#hangout-list {
+  text-align: center;
+  font-size: 50px;
 }
 
 /* The textbox for the form */
@@ -617,6 +621,7 @@ h4{
   justify-content: center;
   align-items: center;
   position:relative;
+  left: -10px;
 
 }
 
